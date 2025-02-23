@@ -1,0 +1,69 @@
+/*
+General rules
+*/
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+Needed for identification in JavaScript
+*/
+.jqueryButton {
+}
+.labelDG {
+}
+.labelVD {
+}
+.labelCheckAlphaHull {    
+}
+.labelCheckAlphaShape {   
+}
+.checkAlphaHull {    
+}
+.checkAlphaShape {   
+}
+.checkAlphaDisc {   
+}
+.clearButton {
+}
+.clearAlphaExtremeButton {
+}
+.alphaValue {
+}
+.alphaSlider {
+}
+.geomButton{
+}
+.geomButtonLabel{
+}
+
+.hasMargin {
+    margin: 5px;
+}
+
+.floatingLeft {
+    float: left;    
+}
+
+.displayInline {
+    display: inline;
+}
+
+.fixedWidthStackedButton {
+    display: block;
+    width: 150px;
+}
+
+#upperAlphaValueDiv {
+    white-space: nowrap;
+}
+
+.alphaValueText {
+    text-align: center;
+    font-size: 150%
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>&alpha; Shapes</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,
+              maximum-scale=1.0, user-scalable=0" />
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/portrait.css" media="(orientation: portrait)">
+    <link rel="stylesheet" href="css/landscape.css" media="(orientation: landscape)">
+
+    <link rel="stylesheet" href="js/libs/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
+
+    <script src="js/libs/jquery-2.1.0/jquery-2.1.0.min.js"></script>
+    <script src="js/libs/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/libs/jquery.ui.touch-punch-0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="css/libs/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/libs/raphael-2.1.2/raphael-min.js"></script>
+
+    <script type="text/javascript" src="js/compiled/alphashape-app.js"></script>
+
+</head>
+<body>
+<div id="menubar">
+    <button id="alphaShapeDialogButton" type="button" class="btn btn-default">&alpha;-Shape</button>
+    <button id="voronoiDialogButton" class="btn btn-default">Voronoi Diagram</button>
+
+    <div class="btn-group" id="fileButtons">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            File <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><button class="btn btn-default fileButton" id="clearButton">Clear</button></li>
+            <li><form id="svgForm" method="get" action="resources/alphashape.svg" target="hiddenFrame">
+                <button class="btn btn-default fileButton" id="svgButton" type="submit">Save SVG</button>
+            </form></li>
+            <li><form id ="pointsDownloadForm" method="get" action="resources/points.json" target="hiddenFrame">
+                <button class="btn btn-default fileButton" id="pointsDownloadButton" type="submit">Save Points</button>
+            </form></li>
+            <li>
+                <button class="btn btn-default fileButton" id="pointsUploadButton">Load Points</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="alphaShapeDialog" title="&alpha; Shape">
+    <div id="alphaValueDiv">
+        &alpha; = <span id="alphaValue"></span>
+    </div>
+    <div id="alphaSliderAndTicks">
+        <div id="alphaTickDiv1">
+            <canvas id="alphaTickCanvas1"></canvas>
+        </div>
+        <div id="verticalAlphaSlider" class="alphaSlider"></div>
+        <div id="horizontalAlphaSlider" class="alphaSlider"></div>
+        <div id="alphaTickDiv2">
+            <canvas id="alphaTickCanvas2"></canvas>
+        </div>
+    </div>
+    <div id="alphaButtons">
+        <input class="alphaButton" type="checkbox" id="checkAlphaShape" checked="checked" />
+        <label class="alphaButtonLabel" id="labelCheckAlphaShape" for="checkAlphaShape">&alpha;-Shape</label>
+        <input class="alphaButton" type="checkbox" id="checkAlphaHull" checked="checked" />
+        <label class="alphaButtonLabel" id="labelCheckAlphaHull" for="checkAlphaHull">&alpha;-Hull</label>
+        <input class="alphaButton" type="checkbox" id="checkAlphaDisc" />
+        <label class="alphaButtonLabel" id="labelCheckAlphaDisc" for="checkAlphaDisc">&alpha;-Disc</label>
+        <input class="alphaButton" type="checkbox" id="checkDGc" />
+        <label class="alphaButtonLabel" id="labelCheckDGc" for="checkDGc">DG<sub>min</sub></label>
+        <input class="alphaButton" type="checkbox" id="checkDGf" />
+        <label class="alphaButtonLabel" id="labelCheckDGf" for="checkDGf">DG<sub>max</sub></label>
+    </div>
+</div>
+
+<div id="voronoiDialog" title="Voronoi Diagram">
+    <div id="sweepLineSliderLabel">sweep line</div>
+    <div id="sweepLineSlider"></div>
+    <div id="voronoiButtons">
+        <div id="fortuneButtons">
+            <div class="sectionHeader">Fortune's algorithm</div>
+            <input class="voronoiButton" type="checkbox" id="checkVDc" />
+            <label class="voronoiButtonLabel" id="labelCheckVDc" for="checkVDc">VD<sub>min</sub></label>
+            <input class="voronoiButton" type="checkbox" id="checkBeachLine"/>
+            <label class="voronoiButtonLabel" id="labelCheckBeachLine" for="checkBeachLine">beach line</label>
+        </div>
+        <div id="skyumButtons">
+            <div class="sectionHeader">Skyum's algorithm</div>
+            <input class="voronoiButton" type="checkbox" id="checkVDf" />
+            <label class="voronoiButtonLabel" id="labelCheckVDf" for="checkVDf">VD<sub>max</sub></label>
+            <input class="voronoiButton" type="checkbox" id="checkTriangles" />
+            <label class="voronoiButtonLabel" id="labelCheckTriangles" for="checkTriangles">triangles</label>
+            <label for="triangleSpinner">select triangle</label>
+            <input id="triangleSpinner">
+            <input class="voronoiButton" type="checkbox" id="checkSmallestCircle" />
+            <label class="voronoiButtonLabel" id="labelCheckSmallestCircle" for="checkSmallestCircle">
+                smallest circle</label>
+            <input class="voronoiButton" type="checkbox" id="checkConvexHull" />
+            <label class="voronoiButtonLabel" id="labelCheckConvexHull" for="checkConvexHull">
+                convex hull</label>
+        </div>
+    </div>
+</div>
+
+<div id="main">
+    <canvas id="canvas"></canvas>
+</div>
+
+<div id="svgDiv"></div>
+
+<iframe id="hiddenFrame" class="hidden"></iframe>
+
+<form id ="pointsUploadForm" method="post" action="resources/points.json" target="hiddenFrame" enctype="multipart/form-data">
+    <input id="pointsChooseButton" name="pointsFile" type="file"/>
+    <input id="uploadButton" type="submit" value="Upload"/>
+</form>
+
+</body>
+</html>

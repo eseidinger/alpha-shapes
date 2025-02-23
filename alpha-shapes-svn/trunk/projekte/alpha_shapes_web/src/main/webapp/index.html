@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Shapes</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+              maximum-scale=1.0, user-scalable=0" />
+        
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui-1.10.3/ui/minified/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui-touch-punch-0.2.2/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/libs/raphael-2.1.0/raphael-min.js"></script>
+        
+        <script type="text/javascript" src="js/util/misc.js"></script>
+
+        <script type="text/javascript" src="js/geom/vector.js"></script>
+        <script type="text/javascript" src="js/geom/line.js"></script>
+        <script type="text/javascript" src="js/geom/ray.js"></script>
+        <script type="text/javascript" src="js/geom/linesegment.js"></script>
+        <script type="text/javascript" src="js/geom/rectangle.js"></script>
+        <script type="text/javascript" src="js/geom/circle.js"></script>
+        <script type="text/javascript" src="js/geom/triangle.js"></script>
+        
+        <script type="text/javascript" src="js/ds/dcel.js"></script>
+        <script type="text/javascript" src="js/ds/tree.js"></script>
+        
+        <script type="text/javascript" src="js/algo/convexhull.js"></script>
+        <script type="text/javascript" src="js/algo/skyum.js"></script>
+        <script type="text/javascript" src="js/algo/fortune.js"></script>
+        <script type="text/javascript" src="js/algo/voronoidelaunay.js"></script>
+        <script type="text/javascript" src="js/algo/alphashape.js"></script>
+        
+        <script type="text/javascript" src="js/ui/userdata.js"></script>
+        <script type="text/javascript" src="js/ui/computations.js"></script>
+        <script type="text/javascript" src="js/ui/svgdrawer.js"></script>
+        <script type="text/javascript" src="js/ui/canvasdrawer.js"></script>
+        <script type="text/javascript" src="js/ui/canvasdrawingcontroller.js"></script>
+        <script type="text/javascript" src="js/ui/canvaseventcontroller.js"></script>
+        <script type="text/javascript" src="js/ui/buttoncontroller.js"></script>
+        <script type="text/javascript" src="js/ui/slidercontroller.js"></script>
+        <script type="text/javascript" src="js/ui/application.js"></script>
+        
+        <link rel="stylesheet" type="text/css"
+              href="js/libs/jquery-ui-1.10.3/themes/base/minified/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css"
+              href="css/custom-ui.css" />        
+    </head>
+    <body>
+        <div id="upperControls">
+            <div id="upperAlphaButtons" class="hasMargin displayInline">
+                <input class="jqueryButton checkAlphaShape" type="checkbox" id="upperCheckAlphaShape" />
+                <label class="labelCheckAlphaShape" id="labelUpperCheckAlphaShape" for="upperCheckAlphaShape">&alpha;-Shape</label>
+                <input class="jqueryButton checkAlphaHull" type="checkbox" id="upperCheckAlphaHull" />
+                <label class="labelCheckAlphaHull" id="labelUpperCheckAlphaHull" for="upperCheckAlphaHull">&alpha;-Hull</label>
+                <input class="jqueryButton checkAlphaDisc" type="checkbox" id="upperCheckAlphaDisc" />
+                <label id="labelUpperCheckAlphaDisc" for="upperCheckAlphaDisc">&alpha;-Disc</label>
+            </div>            
+            <div id="upperCommandButtons" class="hasMargin displayInline">
+                <button class="jqueryButton clearButton" id="upperClearButton">Clear</button>
+            </div>
+            <div id="upperAlphaValueDiv" class="displayInline alphaValueText">
+                &alpha; = <span class="alphaValue" id="upperAlphaValue"></span>                        
+            </div>
+            <div id="upperAlphaSliderAndTicks">
+                <canvas id="upperAlphaTickCanvas"></canvas>
+                <div class="alphaSlider" id="upperAlphaSlider"></div>
+                <canvas id="upperZeroTickCanvas"></canvas>
+            </div>
+        </div>
+        <div id="controls" class="floatingLeft">
+            <div id="buttons" class="hasMargin floatingLeft">
+                <div id="alphaButtons" class="hasMargin">
+                    <input class="jqueryButton checkAlphaShape" type="checkbox" id="checkAlphaShape" />
+                    <label class="fixedWidthStackedButton labelCheckAlphaShape" id="labelCheckAlphaShape" for="checkAlphaShape">&alpha;-Shape</label>
+                    <input class="jqueryButton checkAlphaHull" type="checkbox" id="checkAlphaHull" />
+                    <label class="fixedWidthStackedButton labelCheckAlphaHull" id="labelCheckAlphaHull" for="checkAlphaHull">&alpha;-Hull</label>
+                    <input class="jqueryButton checkAlphaDisc" type="checkbox" id="checkAlphaDisc" />
+                    <label class="fixedWidthStackedButton" id="labelCheckAlphaDisc" for="checkAlphaDisc">&alpha;-Disc</label>
+                </div>
+                <div id="geomButtons" class="hasMargin">
+                    <input class="jqueryButton geomButton" type="checkbox" id="checkDGc" />
+                    <label class="fixedWidthStackedButton labelDG geomButtonLabel" id="labelCheckDGc" for="checkDGc">DG<sub>min</sub></label>
+                    <input class="jqueryButton geomButton" type="checkbox" id="checkVDc" />
+                    <label class="fixedWidthStackedButton labelVD geomButtonLabel" id="labelCheckVDc" for="checkVDc">VD<sub>min</sub></label>
+                    <input class="jqueryButton geomButton" type="checkbox" id="checkDGf" />
+                    <label class="fixedWidthStackedButton labelDG geomButtonLabel" id="labelCheckDGf" for="checkDGf">DG<sub>max</sub></label>
+                    <input class="jqueryButton geomButton" type="checkbox" id="checkVDf" />
+                    <label class="fixedWidthStackedButton labelVD geomButtonLabel" id="labelCheckVDf" for="checkVDf">VD<sub>max</sub></label>
+                </div>
+                <div id="commandButtons" class="hasMargin">
+                    <button class="fixedWidthStackedButton jqueryButton clearButton" id="clearButton">Clear</button>
+                </div>
+                <div id="alphaValueDiv" class="alphaValueText">
+                    &alpha; = <span class="alphaValue" id="alphaValue"></span>                        
+                </div>
+                <div id="fileButtons" class="hasMargin">
+                    <form id="svgForm" method="get" action="resources/alphashape.svg" target="hiddenFrame">
+                        <button class="fixedWidthStackedButton jqueryButton" id="svgButton" type="submit">Save SVG</button>
+                    </form>
+                    <form id ="pointsDownloadForm" method="get" action="resources/points.json" target="hiddenFrame">
+                        <button class="fixedWidthStackedButton jqueryButton" id="pointsDownloadButton" type="submit">Save Points</button>
+                    </form>
+                    <form id ="pointsUploadForm" method="post" action="resources/points.json" target="hiddenFrame" enctype="multipart/form-data">
+                        <input class="fixedWidthStackedButton jqueryButton" id="pointsChooseButton" name="pointsFile" type="file"/>
+                        <input class="fixedWidthStackedButton jqueryButton" id="pointsUploadButton" type="submit" value="Load Points"/>
+                    </form>
+                </div>
+            </div>
+            <div id="alphaSliderAndTicks" class="hasMargin floatingLeft">
+                <canvas id="alphaTickCanvas" class="floatingLeft"></canvas>
+                <div class="alphaSlider floatingLeft" id="alphaSlider"></div>
+                <canvas id="zeroTickCanvas" class="floatingLeft"></canvas>
+            </div>
+        </div>
+        <canvas id="canvas" class="floatingLeft"></canvas>
+        <div id="svgDiv" class="hidden"></div>
+        <iframe id="hiddenFrame" class="hidden"></iframe>
+    </body>
+</html>

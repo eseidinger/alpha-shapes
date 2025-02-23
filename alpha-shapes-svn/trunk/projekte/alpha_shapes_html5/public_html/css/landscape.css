@@ -1,0 +1,105 @@
+/*
+General rules
+*/
+
+* {
+margin: 0;
+padding: 0;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+Needed for identification in JavaScript
+*/
+.jqueryButton {
+}
+#checkDGc:checked + label {
+    background: rgba(255,0,0,0.5);
+}
+#checkVDc:checked + label{
+    background: rgba(0,0,255,0.5);
+}
+#checkDGf:checked + label {
+    background: rgba(255,0,0,0.5);
+}
+#checkVDf:checked + label{
+    background: rgba(0,0,255,0.5);
+}
+#checkAlphaHull:checked + label {
+    background: rgba(0,126,0,0.2);
+}
+#checkAlphaShape:checked + label {
+    background: rgba(255,0,0,0.2);
+}
+
+.fixedWidthButton {
+    display: block;
+    width: 150px;
+}
+
+#alphaValueDiv {
+    text-align: center;
+    font-size: 150%;
+}
+
+#controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#alphaButtons {
+    padding: 5px;
+}
+
+#geomButtons {
+    padding: 5px;
+}
+
+#commandButtons {
+    padding: 5px;
+}
+
+#buttons {
+    float: left;
+    width: 160px;
+    height: 100%;
+}
+
+#alphaSliderAndTicks {
+    float: left;
+    width: 30px;
+    height: 99%;
+}
+
+#alphaSlider {
+    float: left;
+    width: 10px;
+}
+
+#alphaTickCanvas1 {
+    float: left;
+    width: 10px;
+}
+
+#alphaTickCanvas2 {
+    float: left;
+    width: 10px;
+}
+
+#canvas {
+    margin-left: 200px;
+}

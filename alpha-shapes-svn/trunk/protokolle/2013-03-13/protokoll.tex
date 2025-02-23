@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=guillemets]{csquotes}
+\usepackage[backend=bibtex8]{biblatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\bibliography{../../literatur/quellen}
+
+\author{Emanuel Seidinger}
+\title{Besprechungsprotokoll}
+\subject{$\alpha$-Shapes Applikation für mobile Plattformen}
+\date{13.\,03.~2013}
+
+\begin{document}
+\maketitle
+
+\section*{Teilnehmer}
+\begin{list}{}{}
+\item apl. Prof. Dr. Christian Icking
+\item Dr. Lihong Ma
+\item Emanuel Seidinger
+\end{list}
+
+\section*{Übersicht}
+\begin{itemize}
+\item Funktionalität
+\item Bedienkonzept
+\item Entwicklungsumgebung
+\item Deployment
+\item Zu klärende Punkte
+\end{itemize}
+
+\section*{Funktionalität}
+
+\subsection*{Existierende Applikationen}
+Zur Erstellung von $\alpha$-Shapes existieren bereits Applikationen in Form von Java Applets.
+Diese erfordern die Installation eines Java Plugins im Browser.
+Ein Beispiel eines solchen Applets findet man unter \cite{alpha_applet}.
+
+Die Eingabe einer Punktmenge erfolgt per Klick auf die linke Maustaste. Mit einem Druck auf die
+rechte Maustaste lassen sich Punkte wieder entfernen. Punkte lassen sich per Drag and Drop verschieben.
+Der Parameter $\alpha$ ist hier als Kehrwert des Radius derjenigen Scheiben definiert, welche zur
+Konstruktion der $\alpha$-Shape verwendet werden. Er kann mit Hilfe eines Schiebereglers im Intervall 
+$(-\infty, \infty)$ variiert werden, um unterschiedliche $\alpha$-Shapes zu erzeugen.
+
+Zusätzlich zur $\alpha$-Shape lassen sich die folgenden graphischen Elemente einblenden:
+\begin{itemize}
+\item Den Rand derjenigen verallgemeinerten Kreisscheiben mit Radius $\frac{1}{\alpha}$, auf denen die
+$\alpha$-Nachbarn liegen
+\item Das Voronoi Diagramm der Punkte mit kleinsten bzw. größten Abstand
+\item Die Delaunay Triangulation der Punkte mit kleinsten bzw. größten Abstand
+\end{itemize}
+
+\subsection*{Die zur erstellende Applikation im Vergleich zu bestehenden Lösungen}
+Zur Umsetzung soll auf Technologien zurückgegriffen werden, welche moderne Browser ohne zusätzliche
+Plugins interpretieren können. Dieses Projekt soll mit HTML5 realisiert werden. Es soll nur HTML, CSS und
+JavaScript verwendet werden.
+
+Zur besseren Anschaulichkeit, soll der Parameter $\alpha$ der Radius derjenigen verallgemeinerten Kreisscheiben
+sein, welche zur Konstruktion der $\alpha$-Shape verwendet werden.
+
+Zusätzlich zur bestehenden Lösung, soll die neue Applikation dem Benutzer markante Werte für $\alpha$ aus
+dem $\alpha$-Spektrum zur Auswahl anbieten. Diese markanten Punkte stellen Rasten auf dem Schieberegler
+zur Einstellung von $\alpha$ dar.
+
+\section*{Bedienkonzept}
+Da die Applikation auf mobilen Geräten ausgeführt werden soll, ist darauf zu achten, dass eine sinnvolle
+Touch-Gestensteuerung möglich ist. Die Benutzeroberfläche muss auch an den Viewport angepasst sein.
+
+Als Hilfestellung zur Einstellung von $\alpha$ wird für positive Werte von $\alpha$ eine Kreisscheibe mit variablen
+Radius dargestellt, welche so auf der Zeichenfläche verschoben werden kann, dass sie keinen Punkt der Punktmenge
+verdeckt.
+Für negative Werte von $\alpha$, wird ein Ring mit variablen Durchmesser dargestellt, welcher auf der Zeichenfläche
+verschoben werden kann, dabei aber immer alle Punkte der Punktmenge enthält.
+
+\section*{Entwicklungsumgebung}
+Als Entwicklungsumgebung wird Netbeans verwendet. Das Projekt wird als HTML5 Projekt angelegt. Für die Durchführung
+der Unit-Tests wird Jasmin \cite{jasmin_test} verwendet. Der Quellcode wird in einem Subversion Repository verwaltet.
+
+\section*{Deployment}
+Die Applikation soll auf verschiedenen mobilen Plattformen laufen. Dies lässt sich durch PhoneGap \cite{phone_gap}
+realisieren.
+
+Die Applikation kann als Web-Applikation über den Browser gestartet werden können. Soll die Applikation Zugriff
+auf die Hardware der jeweiligen Ausführungsplattform erhalten, muss die Web-Applikation in eine native Applikation
+eingebettet werden. Dadurch können unter anderem Punktmengen gespeichert und geladen werden.
+
+Zur Einbettung in eine Desktop-Applikation könnte hierfür der JavaFX WebView \cite{javafx_webview} verwendet werden.
+Eine weiter Möglichkeit ist die Webkit Integration in QT \cite{qt_webkit}.
+
+\section*{Zu klärende Punkte}
+\subsection*{Sprungstelle bei $\alpha = 0$}
+
+In der Seminararbeit ist als $\alpha$-Hülle einer Punktmenge $S$ für negative $\alpha$, wobei der Betrag von
+$\alpha$ kleiner als der Radius der kleinsten Umkreisscheibe, aber größer als $0$ ist, die gesamte Ebene angegeben.
+
+Die $\alpha$-Hülle für negative $\alpha$ ist gegeben durch:
+
+\begin{equation}
+	AH(S) = \bigcap \lbrace D(C, -\alpha) \mid C \in \mathbb{R}^2 \wedge D \cap S = S \rbrace
+\end{equation}
+
+Für das oben angegeben Intervall von $\alpha$ ergibt dies folgende $\alpha$-Hülle:
+
+\begin{equation}
+	AH(S) = \bigcap \lbrace \rbrace = \oslash
+\end{equation}
+
+Dies entspricht der leeren Menge und nicht der gesamten Ebene, wie oben angegeben.
+
+Entsprechend findet man im Artikel \cite{alpha1983} unter Abschnitt II. Basic Notions folgenden Textstelle:
+\begin{quotation}
+Thus we have a family of $\alpha$-Hulls for $\alpha$ ranging from $-\infty$ to $\infty$. Sample members of this
+family are \textbf{the entire plane (for $\alpha$ sufficiently large)}, the smallest enclosing circle of $S$ (when 
+$\dfrac{1}{\alpha}$ equals its radius), the convex hull of $S$ (for $\alpha = 0$), and $S$ itself (for
+$\alpha$ sufficiently small).
+\end{quotation}
+
+Hier ist die Originaldefinition der $\alpha$-Hülle für positive $\alpha$ aus \cite{alpha1983}:
+\begin{quotation}
+Definition 1: Let $\alpha$ be a sufficiently small but otherwise arbitrary positive real. The $\alpha$-hull of $S$ is
+the intersection of all closed discs with radius $\dfrac{1}{\alpha}$ that contain all the points of $S$.
+\end{quotation}
+
+Für große $\alpha$ gibt es keine Kreisscheibe mehr, welche alle Punkte aus $S$ enthält. Die $alpha$-Hülle ergibt sich
+demnach als Durchschnittsmenge der leeren Menge, welche wiederum die leere Menge ist.
+
+\printbibliography
+
+\end{document}

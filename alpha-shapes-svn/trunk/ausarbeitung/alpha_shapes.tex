@@ -1,0 +1,77 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[12pt,a4paper,headsepline,bibliography=totoc,listof=totoc]{scrbook}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=guillemets]{csquotes}
+\usepackage[backend=bibtex8]{biblatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfig}
+\usepackage[a4paper]{geometry}
+\usepackage{listings}
+
+\geometry{left=3.7cm,right=2.8cm,top=1.5cm,bottom=1.5cm,includeheadfoot}
+\setkomafont{descriptionlabel}{\boldmath}
+
+\bibliography{../literatur/quellen}
+\nocite{*}
+
+\begin{document}
+
+\newtheorem{defi}{Definition}
+\newenvironment{defin}{\begin{defi}\rm}{\end{defi}}
+\newtheorem{eige}{Eigenschaft}
+\newenvironment{eigen}{\begin{eige}\rm}{\end{eige}}
+\newtheorem{lemm}{Lemma}
+\newenvironment{lemma}{\begin{lemm}\rm}{\end{lemm}}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\textsc{\Huge $\alpha$-Shapes}\\[1cm]
+\textsc{\LARGE Eine HTML5-Applikation für unterschiedliche Plattformen\\~}\\[1.5cm]
+{\Large Abschlussarbeit im Bachelorstudiengang Informatik}\\[1cm]
+{\large an der}\\
+{\Large FernUniversität in Hagen\\Fakultät für Mathematik und Informatik\\Lehrgebiet Kooperative Systeme\\~}\\[2cm]
+\begin{flushleft} \large
+\emph{Autor:}\\
+Emanuel \textsc{Seidinger}\\
+\emph{Matrikelnummer:}\\
+8147388\\[1cm]
+\emph{Betreuer:}\\
+apl. Prof. Dr. Christian \textsc{Icking}\\
+Dr. Lihong \textsc{Ma}
+\end{flushleft}
+\vspace*{2cm}
+{\large 7.\,Oktober 2013}
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\chapter*{Erklärung}
+Ich versichere, dass die vorliegende Arbeit von mir selbständig, ohne Hilfe Dritter und ausschließlich unter Verwendung der angegebenen Quellen angefertigt wurde. Alle Stellen, die wörtlich oder sinngemäß aus Veröffentlichungen entnommen sind, habe ich als solche kenntlich gemacht.\\[1cm]
+Eiselfing, den 7.10.2013
+
+\include{alpha_shapes_ch_1}
+\include{alpha_shapes_ch_2}
+\include{alpha_shapes_ch_3}
+\include{alpha_shapes_ch_4}
+\include{alpha_shapes_ch_5}
+\include{alpha_shapes_ch_6}
+
+\appendix
+\include{alpha_shapes_appendix}
+
+\printbibliography
+\listoffigures
+
+\end{document}

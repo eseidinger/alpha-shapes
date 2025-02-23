@@ -1,0 +1,117 @@
+html {
+    -ms-touch-action: none;
+}
+
+/*
+Needed for identification in JavaScript
+*/
+#checkDGc:checked + label {
+    background: rgba(255,0,0,0.5);
+}
+#checkVDc:checked + label{
+    background: rgba(0,0,255,0.5);
+}
+#checkBeachLine:checked + label{
+    background: rgba(0,126,0,0.5);
+}
+#checkTriangles:checked + label{
+    background: rgba(0,126,0,0.5);
+}
+#checkDGf:checked + label {
+    background: rgba(255,0,0,0.5);
+}
+#checkVDf:checked + label{
+    background: rgba(0,0,255,0.5);
+}
+#checkAlphaHull:checked + label {
+    background: rgba(0,126,0,0.2);
+}
+#checkAlphaShape:checked + label {
+    background: rgba(255,0,0,0.2);
+}
+
+.sectionHeader {
+    margin: 4px;
+    display: block;
+    width: 100px;
+}
+
+.voronoiButtonLabel {
+    margin: 4px;
+    display: block;
+    width: 100px;
+}
+
+#triangleSpinner {
+    margin: 4px;
+    display: block;
+    width: 90px;
+}
+
+#voronoiButtons {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+#fortuneButtons {
+    border: solid;
+    border-width: 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#skyumButtons {
+    border: solid;
+    border-width: 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#sweepLineSliderLabel {
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 50px;
+}
+
+#sweepLineSlider {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 10px;
+}
+
+.fileButton {
+    margin: 4px;
+    display: block;
+    width: 150px;
+}
+
+#menubar {
+    position: absolute;
+    padding: 7px;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+
+#main {
+    position: absolute;
+    top: 55px;
+    bottom: 5px;
+    width: 100%;
+}
+
+#svgDiv {
+    display: none;
+}
+
+#pointsUploadForm {
+    display: none;
+}
+
+#hiddenFrame {
+    display: none;
+}

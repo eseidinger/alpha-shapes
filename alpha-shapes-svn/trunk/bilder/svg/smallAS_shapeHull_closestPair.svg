@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="699"
+   version="1.1"
+   width="1147"
+   style="overflow: hidden; position: relative;"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="smallAS_shapeHull_closestPair.svg">
+  <metadata
+     id="metadata254">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview252"
+     showgrid="false"
+     inkscape:zoom="1.701495"
+     inkscape:cx="574.63066"
+     inkscape:cy="259.45751"
+     inkscape:window-x="61"
+     inkscape:window-y="21"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <desc
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+     id="desc4">Created with Raphaël 2.1.0</desc>
+  <defs
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+     id="defs6" />
+  <path
+     fill="none"
+     stroke="#ff0000"
+     d="M567,430L559,449Z"
+     stroke-width="10"
+     stroke-opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-opacity: 0.2;"
+     id="path8" />
+  <path
+     fill="none"
+     stroke="#ff0000"
+     d="M593,422L598,443Z"
+     stroke-width="10"
+     stroke-opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-opacity: 0.2;"
+     id="path10" />
+  <circle
+     cx="502"
+     cy="506"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle12" />
+  <circle
+     cx="279"
+     cy="504"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle14" />
+  <circle
+     cx="528"
+     cy="503"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle16" />
+  <circle
+     cx="304"
+     cy="501"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle18" />
+  <circle
+     cx="557"
+     cy="500"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle20" />
+  <circle
+     cx="422"
+     cy="498"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle22" />
+  <circle
+     cx="395"
+     cy="497"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle24" />
+  <circle
+     cx="476"
+     cy="496"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle26" />
+  <circle
+     cx="576"
+     cy="486"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle28" />
+  <circle
+     cx="499"
+     cy="482"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle30" />
+  <circle
+     cx="525"
+     cy="476"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle32" />
+  <circle
+     cx="279"
+     cy="475"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle34" />
+  <circle
+     cx="306"
+     cy="475"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle36" />
+  <circle
+     cx="420"
+     cy="471"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle38" />
+  <circle
+     cx="549"
+     cy="470"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle40" />
+  <circle
+     cx="389"
+     cy="469"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle42" />
+  <circle
+     cx="590"
+     cy="465"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle44" />
+  <circle
+     cx="337"
+     cy="453"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle46" />
+  <circle
+     cx="365"
+     cy="449"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle48" />
+  <circle
+     cx="559"
+     cy="449"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle50" />
+  <circle
+     cx="388"
+     cy="446"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle52" />
+  <circle
+     cx="283"
+     cy="443"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle54" />
+  <circle
+     cx="309"
+     cy="443"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle56" />
+  <circle
+     cx="598"
+     cy="443"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle58" />
+  <circle
+     cx="410"
+     cy="440"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle60" />
+  <circle
+     cx="338"
+     cy="431"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle62" />
+  <circle
+     cx="567"
+     cy="430"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle64" />
+  <circle
+     cx="540"
+     cy="426"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle66" />
+  <circle
+     cx="363"
+     cy="425"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle68" />
+  <circle
+     cx="593"
+     cy="422"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle70" />
+  <circle
+     cx="515"
+     cy="418"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle72" />
+  <circle
+     cx="309"
+     cy="415"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle74" />
+  <circle
+     cx="384"
+     cy="414"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle76" />
+  <circle
+     cx="492"
+     cy="407"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle78" />
+  <circle
+     cx="408"
+     cy="404"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle80" />
+  <circle
+     cx="569"
+     cy="404"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle82" />
+  <circle
+     cx="286"
+     cy="401"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle84" />
+  <circle
+     cx="538"
+     cy="399"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle86" />
+  <circle
+     cx="510"
+     cy="392"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle88" />
+  <circle
+     cx="373"
+     cy="389"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle90" />
+  <circle
+     cx="311"
+     cy="385"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle92" />
+  <circle
+     cx="478"
+     cy="379"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle94" />
+  <circle
+     cx="395"
+     cy="376"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle96" />
+  <circle
+     cx="499"
+     cy="364"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle98" />
+  <circle
+     cx="290"
+     cy="362"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle100" />
+  <circle
+     cx="364"
+     cy="361"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle102" />
+  <circle
+     cx="325"
+     cy="355"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle104" />
+  <circle
+     cx="570"
+     cy="355"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle106" />
+  <circle
+     cx="467"
+     cy="352"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle108" />
+  <circle
+     cx="385"
+     cy="348"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle110" />
+  <circle
+     cx="545"
+     cy="348"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle112" />
+  <circle
+     cx="518"
+     cy="346"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle114" />
+  <circle
+     cx="596"
+     cy="346"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle116" />
+  <circle
+     cx="487"
+     cy="333"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle118" />
+  <circle
+     cx="305"
+     cy="330"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle120" />
+  <circle
+     cx="361"
+     cy="328"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle122" />
+  <circle
+     cx="333"
+     cy="327"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle124" />
+  <circle
+     cx="573"
+     cy="327"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle126" />
+  <circle
+     cx="512"
+     cy="322"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle128" />
+  <circle
+     cx="546"
+     cy="321"
+     r="12"
+     fill="#ff0000"
+     stroke="#ff0000"
+     opacity="0.2"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0.2;"
+     id="circle130" />
+  <circle
+     cx="279"
+     cy="475"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle132" />
+  <circle
+     cx="283"
+     cy="443"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle134" />
+  <circle
+     cx="286"
+     cy="401"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle136" />
+  <circle
+     cx="290"
+     cy="362"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle138" />
+  <circle
+     cx="305"
+     cy="330"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle140" />
+  <circle
+     cx="333"
+     cy="327"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle142" />
+  <circle
+     cx="361"
+     cy="328"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle144" />
+  <circle
+     cx="385"
+     cy="348"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle146" />
+  <circle
+     cx="395"
+     cy="376"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle148" />
+  <circle
+     cx="420"
+     cy="471"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle150" />
+  <circle
+     cx="311"
+     cy="385"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle152" />
+  <circle
+     cx="309"
+     cy="415"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle154" />
+  <circle
+     cx="306"
+     cy="475"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle156" />
+  <circle
+     cx="338"
+     cy="431"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle158" />
+  <circle
+     cx="364"
+     cy="361"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle160" />
+  <circle
+     cx="325"
+     cy="355"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle162" />
+  <circle
+     cx="309"
+     cy="443"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle164" />
+  <circle
+     cx="363"
+     cy="425"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle166" />
+  <circle
+     cx="389"
+     cy="469"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle168" />
+  <circle
+     cx="410"
+     cy="440"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle170" />
+  <circle
+     cx="373"
+     cy="389"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle172" />
+  <circle
+     cx="384"
+     cy="414"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle174" />
+  <circle
+     cx="337"
+     cy="453"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle176" />
+  <circle
+     cx="365"
+     cy="449"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle178" />
+  <circle
+     cx="279"
+     cy="504"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle180" />
+  <circle
+     cx="304"
+     cy="501"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle182" />
+  <circle
+     cx="422"
+     cy="498"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle184" />
+  <circle
+     cx="395"
+     cy="497"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle186" />
+  <circle
+     cx="388"
+     cy="446"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle188" />
+  <circle
+     cx="408"
+     cy="404"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle190" />
+  <circle
+     cx="593"
+     cy="422"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle192" />
+  <circle
+     cx="598"
+     cy="443"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle194" />
+  <circle
+     cx="590"
+     cy="465"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle196" />
+  <circle
+     cx="576"
+     cy="486"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle198" />
+  <circle
+     cx="557"
+     cy="500"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle200" />
+  <circle
+     cx="528"
+     cy="503"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle202" />
+  <circle
+     cx="502"
+     cy="506"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle204" />
+  <circle
+     cx="499"
+     cy="482"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle206" />
+  <circle
+     cx="525"
+     cy="476"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle208" />
+  <circle
+     cx="567"
+     cy="430"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle210" />
+  <circle
+     cx="540"
+     cy="426"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle212" />
+  <circle
+     cx="569"
+     cy="404"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle214" />
+  <circle
+     cx="538"
+     cy="399"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle216" />
+  <circle
+     cx="492"
+     cy="407"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle218" />
+  <circle
+     cx="478"
+     cy="379"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle220" />
+  <circle
+     cx="549"
+     cy="470"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle222" />
+  <circle
+     cx="518"
+     cy="346"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle224" />
+  <circle
+     cx="467"
+     cy="352"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle226" />
+  <circle
+     cx="512"
+     cy="322"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle228" />
+  <circle
+     cx="499"
+     cy="364"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle230" />
+  <circle
+     cx="515"
+     cy="418"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle232" />
+  <circle
+     cx="510"
+     cy="392"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle234" />
+  <circle
+     cx="487"
+     cy="333"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle236" />
+  <circle
+     cx="545"
+     cy="348"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle238" />
+  <circle
+     cx="546"
+     cy="321"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle240" />
+  <circle
+     cx="570"
+     cy="355"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle242" />
+  <circle
+     cx="573"
+     cy="327"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle244" />
+  <circle
+     cx="596"
+     cy="346"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle246" />
+  <circle
+     cx="476"
+     cy="496"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle248" />
+  <circle
+     cx="559"
+     cy="449"
+     r="5"
+     fill="#000000"
+     stroke="#000000"
+     opacity="1"
+     style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"
+     id="circle250" />
+  <path
+     sodipodi:type="arc"
+     style="fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="path3231"
+     sodipodi:cx="578.60883"
+     sodipodi:cy="436.58371"
+     sodipodi:rx="41.434151"
+     sodipodi:ry="40.846432"
+     d="m 620.04298,436.58371 a 41.434151,40.846432 0 1 1 -82.86831,0 41.434151,40.846432 0 1 1 82.86831,0 z" />
+</svg>

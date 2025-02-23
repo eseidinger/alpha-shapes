@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>&alpha; Shapes</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,
+              maximum-scale=1.0, user-scalable=0" />
+
+        <link rel="stylesheet" href="css/canvas.css">
+
+        <script src="js/libs/jquery-2.1.0/jquery-2.1.0.js"></script>
+        <script src="js/libs/raphael-2.1.2/raphael.js"></script>
+
+        <script type="text/javascript" src="js/alphashape/namespace.js"></script>
+        <script type="text/javascript" src="js/alphashape/util/namespace.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/namespace.js"></script>
+        <script type="text/javascript" src="js/alphashape/ds/namespace.js"></script>
+        <script type="text/javascript" src="js/alphashape/algo/namespace.js"></script>
+
+        <script type="text/javascript" src="js/alphashape/util/constant.js"></script>
+        <script type="text/javascript" src="js/alphashape/util/comparator.js"></script>
+        <script type="text/javascript" src="js/alphashape/util/array.js"></script>
+
+        <script type="text/javascript" src="js/alphashape/geom/pathelement.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/vector.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/line.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/linesegment.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/rectangle.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/arc.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/circle.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/triangle.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/bezier.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/halfplane.js"></script>
+        <script type="text/javascript" src="js/alphashape/geom/polygon.js"></script>
+
+        <script type="text/javascript" src="js/alphashape/ds/tree.js"></script>
+        <script type="text/javascript" src="js/alphashape/ds/dcel.js"></script>
+
+        <script type="text/javascript" src="js/alphashape/algo/convexhull.js"></script>
+        <script type="text/javascript" src="js/alphashape/algo/skyum.js"></script>
+        <script type="text/javascript" src="js/alphashape/algo/fortune.js"></script>
+        <script type="text/javascript" src="js/alphashape/algo/voronoidelaunay.js"></script>
+        <script type="text/javascript" src="js/alphashape/algo/alphashape.js"></script>
+
+        <script type="text/javascript" src="js/canvas/namespace.js"></script>
+        <script type="text/javascript" src="js/application/namespace.js"></script>
+
+        <script type="text/javascript" src="js/util/misc.js"></script>
+
+        <script type="text/javascript" src="js/canvas/svgdrawer.js"></script>
+        <script type="text/javascript" src="js/canvas/canvasdrawer.js"></script>
+        <script type="text/javascript" src="js/canvas/drawingcontroller.js"></script>
+        <script type="text/javascript" src="js/canvas/canvaseventcontroller.js"></script>
+
+        <script type="text/javascript" src="js/application/computations.js"></script>
+        <script type="text/javascript" src="js/application/shareddata.js"></script>
+        <script type="text/javascript" src="js/application/applicationcanvas.js"></script>
+    </head>
+    <body>
+
+        <div id="main">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="svgDiv"></div>
+
+    </body>
+</html>

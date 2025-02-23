@@ -1,0 +1,52 @@
+#alphaButtons {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+.alphaButtonLabel {
+    margin: 4px;
+    display: inline;
+    width: 100px;
+}
+
+#alphaValueDiv {
+    position: absolute;
+    top: 60px;
+    left: 3px;
+    padding: 5px;
+    width: 95px;
+}
+
+#alphaSliderAndTicks {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    left: 100px;
+    height: 50px;
+}
+
+#horizontalAlphaSlider {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 10px;
+}
+
+#verticalAlphaSlider {
+    display: none;
+}
+
+#alphaTickDiv1 {
+    position: absolute;
+    top: 0;
+    width: 100%
+    height: 10px;
+}
+
+#alphaTickDiv2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+    height: 10px;
+}

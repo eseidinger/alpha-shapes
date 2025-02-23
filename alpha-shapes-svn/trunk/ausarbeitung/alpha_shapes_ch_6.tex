@@ -1,0 +1,13 @@
+% !TEX encoding = UTF-8 Unicode
+
+\chapter{Zusammenfassung und Ausblick}
+
+$\alpha$-Shapes sind Graphen, welche benutzt werden können um Gestalten in Punktmengen zu identifizieren. Die Güte der Darstellung einer Gestalt hängt von dem Parameter $\alpha$ ab. Die $\alpha$-Shape ist eng verwandt mit der $\alpha$-Hülle, welche eine flächenmäßige Darstellung von Gestalten in Punktmengen ist und eine Verallgemeinerung der konvexen Hülle darstellt.
+
+Die $\alpha$-Shape ist ein Subgraph des Delaunay-Graphen. Die Entscheidung, welche Knoten und Kanten des Delaunay-Graphen auch Knoten und Kanten der $\alpha$-Shape sind, wird mit Hilfe des Voronoi-Diagramms getroffen. Diese Eigenschaft wurde ausgenutzt um einen Algorithmus zur Bestimmung der $\alpha$-Shape zu beschreiben. Auch andere Eigenschaften von Punktmengen lassen sich mit diesem Algorithmus bestimmen.
+
+Die Algorithmen zur Bestimmung von Voronoi-Diagrammen und $\alpha$-Shape wurden in JavaScript implementiert und damit eine HTML5-Anwendung zur Veranschaulichung der $\alpha$-Shape entwickelt. Zusätzlich können $\alpha$-Hülle, Voronoi-Dia\-gramm und Delaunay-Graph eingeblendet werden. Mit der Darstellung von $\alpha$-Shapes in dieser Applikation können besondere Eigenschaften von Punktmengen sowie markante Punkte bestimmt werden. Bei der Entwicklung der Applikation wurde Wert darauf gelegt, dass sie sowohl auf dem PC als auch auf mobilen Geräten ausführbar und bedienbar ist.
+
+Die $\alpha$-Shape kann, genauso wie Voronoi-Diagramm und Delaunay-Graph, nicht nur in der Ebene sondern auch im Raum definiert werden. Hierbei übernehmen $\alpha$-Kugeln die Rolle der $\alpha$-Kreisscheiben. Mit der 3D-$\alpha$-Shape können Strukturen in 3D-Punktmengen erkannt werden.
+
+Auch hierzu wäre eine HTML5-Anwendung denkbar. Die graphische Repräsentation könnte durch den WebGL-Standard realisiert werden.

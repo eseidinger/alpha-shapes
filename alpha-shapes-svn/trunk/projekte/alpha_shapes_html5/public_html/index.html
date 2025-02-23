@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Shapes</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+              maximum-scale=1.0, user-scalable=0" />
+        
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui-1.10.3/ui/minified/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui-touch-punch-0.2.2/jquery.ui.touch-punch.min.js"></script>
+
+        <script type="text/javascript" src="js/alphashape.js"></script>
+
+        <script type="text/javascript" src="js/ui/userdata.js"></script>
+        <script type="text/javascript" src="js/ui/computations.js"></script>
+        <script type="text/javascript" src="js/ui/canvasdrawer.js"></script>
+        <script type="text/javascript" src="js/ui/canvasdrawingcontroller.js"></script>
+        <script type="text/javascript" src="js/ui/canvaseventcontroller.js"></script>
+        <script type="text/javascript" src="js/ui/buttoncontroller.js"></script>
+        <script type="text/javascript" src="js/ui/slidercontroller.js"></script>
+        <script type="text/javascript" src="js/ui/application.js"></script>
+        
+        <link rel="stylesheet" type="text/css"
+              href="js/libs/jquery-ui-1.10.3/themes/base/minified/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css"
+              href="css/portrait.css" media="(orientation: portrait)"/>
+        <link rel="stylesheet" type="text/css"
+              href="css/landscape.css" media="(orientation: landscape)"/>
+    </head>
+    <body>
+        <div id="controls">
+            <div id="buttons">
+                <div id="alphaButtons">
+                    <input class="jqueryButton" type="checkbox" id="checkAlphaShape" checked="checked" />
+                    <label class="fixedWidthButton" id="labelCheckAlphaShape" for="checkAlphaShape">&alpha;-Shape</label>
+                    <input class="jqueryButton" type="checkbox" id="checkAlphaHull" checked="checked" />
+                    <label class="fixedWidthButton" id="labelCheckAlphaHull" for="checkAlphaHull">&alpha;-Hull</label>
+                    <input class="jqueryButton" type="checkbox" id="checkAlphaDisc" />
+                    <label class="fixedWidthButton" id="labelCheckAlphaDisc" for="checkAlphaDisc">&alpha;-Disc</label>
+                </div>
+                <div id="geomButtons">
+                    <input class="jqueryButton" type="checkbox" id="checkDGc" />
+                    <label class="fixedWidthButton" id="labelCheckDGc" for="checkDGc">DG<sub>min</sub></label>
+                    <input class="jqueryButton" type="checkbox" id="checkVDc" />
+                    <label class="fixedWidthButton" id="labelCheckVDc" for="checkVDc">VD<sub>min</sub></label>
+                    <input class="jqueryButton" type="checkbox" id="checkDGf" />
+                    <label class="fixedWidthButton" id="labelCheckDGf" for="checkDGf">DG<sub>max</sub></label>
+                    <input class="jqueryButton" type="checkbox" id="checkVDf" />
+                    <label class="fixedWidthButton" id="labelCheckVDf" for="checkVDf">VD<sub>max</sub></label>
+                </div>
+                <div id="commandButtons">
+                    <button class="fixedWidthButton jqueryButton" id="clearButton">Clear</button>
+                </div>
+                <div id="alphaValueDiv">
+                    &alpha; = <span id="alphaValue"></span>                        
+                </div>
+            </div>
+            <div id="alphaSliderAndTicks">
+                <canvas id="alphaTickCanvas1"></canvas>
+                <div id="alphaSlider"></div>
+                <canvas id="alphaTickCanvas2"></canvas>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>            
+        <div id="svgDiv" class="hidden"></div>
+        <iframe id="hiddenFrame" class="hidden"></iframe>
+    </body>
+</html>
