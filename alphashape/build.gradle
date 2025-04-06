@@ -1,23 +1,35 @@
-buildscript {
-    repositories {
-        maven { url "http://repo.spring.io/libs-snapshot" }
-        mavenLocal()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.1.RELEASE")
-    }
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.4.3'
+  id 'io.spring.dependency-management' version '1.1.7'
 }
 
-//apply plugin: 'war'
-apply plugin: 'java'
-apply plugin: 'spring-boot'
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
 
-apply plugin: 'application'
-
-jar {
-    baseName = 'alphashape'
-    version = '1.0'
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
 }
+
+repositories {
+  mavenCentral()
+}
+
+configurations {
+    compileJs {}
+}
+
+dependencies {
+  compileJs('com.google.javascript:closure-compiler:v20131014')
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+// jar {
+//     baseName = 'alphashape'
+//     version = '1.0'
+// }
 
 //war {
 //    baseName = 'alphashape'
@@ -25,41 +37,37 @@ jar {
 //    archiveName = 'alphashape.war'
 //}
 
-configurations {
-    compileJs {}
-}
-
 def jsLibFiles = [
-        'alphashape/namespace.js',
-        'alphashape/util/namespace.js',
-        'alphashape/geom/namespace.js',
-        'alphashape/ds/namespace.js',
-        'alphashape/algo/namespace.js',
+  'alphashape/namespace.js',
+  'alphashape/util/namespace.js',
+  'alphashape/geom/namespace.js',
+  'alphashape/ds/namespace.js',
+  'alphashape/algo/namespace.js',
 
-        'alphashape/util/constant.js',
-        'alphashape/util/comparator.js',
-        'alphashape/util/array.js',
+  'alphashape/util/constant.js',
+  'alphashape/util/comparator.js',
+  'alphashape/util/array.js',
 
-        'alphashape/geom/pathelement.js',
-        'alphashape/geom/vector.js',
-        'alphashape/geom/line.js',
-        'alphashape/geom/linesegment.js',
-        'alphashape/geom/rectangle.js',
-        'alphashape/geom/arc.js',
-        'alphashape/geom/circle.js',
-        'alphashape/geom/triangle.js',
-        'alphashape/geom/bezier.js',
-        'alphashape/geom/halfplane.js',
-        'alphashape/geom/polygon.js',
+  'alphashape/geom/pathelement.js',
+  'alphashape/geom/vector.js',
+  'alphashape/geom/line.js',
+  'alphashape/geom/linesegment.js',
+  'alphashape/geom/rectangle.js',
+  'alphashape/geom/arc.js',
+  'alphashape/geom/circle.js',
+  'alphashape/geom/triangle.js',
+  'alphashape/geom/bezier.js',
+  'alphashape/geom/halfplane.js',
+  'alphashape/geom/polygon.js',
 
-        'alphashape/ds/tree.js',
-        'alphashape/ds/dcel.js',
+  'alphashape/ds/tree.js',
+  'alphashape/ds/dcel.js',
 
-        'alphashape/algo/convexhull.js',
-        'alphashape/algo/skyum.js',
-        'alphashape/algo/fortune.js',
-        'alphashape/algo/voronoidelaunay.js',
-        'alphashape/algo/alphashape.js'
+  'alphashape/algo/convexhull.js',
+  'alphashape/algo/skyum.js',
+  'alphashape/algo/fortune.js',
+  'alphashape/algo/voronoidelaunay.js',
+  'alphashape/algo/alphashape.js'
 ]
 
 def jsAppFiles = [
@@ -143,20 +151,4 @@ task compileAppCanvas(type: JavaExec) {
                                  '--externs', 'src/main/webapp/js/externs.js',
                                  '--warning_level', 'VERBOSE',
                                  '--summary_detail_level', '3']
-}
-
-repositories {
-    mavenCentral()
-    maven { url "http://repo.spring.io/libs-snapshot" }
-}
-
-dependencies {
-    compileJs('com.google.javascript:closure-compiler:v20131014')
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile("junit:junit")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
 }

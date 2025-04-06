@@ -20,23 +20,24 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/resources/alphashape.svg")
 public class AlphaShapesSvgService {
 
     String svg = "";
 
-    @RequestMapping(method = RequestMethod.PUT)
-    @ResponseStatus(HttpStatus.OK)
+    @PutMapping
     public void putSvg(@RequestBody String svg) {
         this.svg = svg;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    @ResponseBody
+    @GetMapping
     public ResponseEntity<String> getSvg() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_OCTET_STREAM);
